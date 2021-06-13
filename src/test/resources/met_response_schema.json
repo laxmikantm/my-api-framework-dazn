@@ -1,0 +1,481 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "currently": {
+      "type": "object",
+      "properties": {
+        "time": {
+          "type": "integer"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "nearestStormDistance": {
+          "type": "integer"
+        },
+        "nearestStormBearing": {
+          "type": "integer"
+        },
+        "precipIntensity": {
+          "type": "integer"
+        },
+        "precipProbability": {
+          "type": "integer"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "apparentTemperature": {
+          "type": "number"
+        },
+        "dewPoint": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "pressure": {
+          "type": "number"
+        },
+        "windSpeed": {
+          "type": "number"
+        },
+        "windGust": {
+          "type": "number"
+        },
+        "windBearing": {
+          "type": "integer"
+        },
+        "cloudCover": {
+          "type": "number"
+        },
+        "uvIndex": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "integer"
+        },
+        "ozone": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "time",
+        "summary",
+        "icon",
+        "nearestStormDistance",
+        "nearestStormBearing",
+        "precipIntensity",
+        "precipProbability",
+        "temperature",
+        "apparentTemperature",
+        "dewPoint",
+        "humidity",
+        "pressure",
+        "windSpeed",
+        "windGust",
+        "windBearing",
+        "cloudCover",
+        "uvIndex",
+        "visibility",
+        "ozone"
+      ]
+    },
+    "minutely": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "precipIntensity": {
+                  "type": "integer"
+                },
+                "precipProbability": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "time",
+                "precipIntensity",
+                "precipProbability"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "summary",
+        "icon",
+        "data"
+      ]
+    },
+    "hourly": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "precipIntensity": {
+                  "type": "integer"
+                },
+                "precipProbability": {
+                  "type": "integer"
+                },
+                "temperature": {
+                  "type": "number"
+                },
+                "apparentTemperature": {
+                  "type": "number"
+                },
+                "dewPoint": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "windGust": {
+                  "type": "number"
+                },
+                "windBearing": {
+                  "type": "integer"
+                },
+                "cloudCover": {
+                  "type": "number"
+                },
+                "uvIndex": {
+                  "type": "integer"
+                },
+                "visibility": {
+                  "type": "integer"
+                },
+                "ozone": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "time",
+                "summary",
+                "icon",
+                "precipIntensity",
+                "precipProbability",
+                "temperature",
+                "apparentTemperature",
+                "dewPoint",
+                "humidity",
+                "pressure",
+                "windSpeed",
+                "windGust",
+                "windBearing",
+                "cloudCover",
+                "uvIndex",
+                "visibility",
+                "ozone"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "summary",
+        "icon",
+        "data"
+      ]
+    },
+    "daily": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "sunriseTime": {
+                  "type": "integer"
+                },
+                "sunsetTime": {
+                  "type": "integer"
+                },
+                "moonPhase": {
+                  "type": "number"
+                },
+                "precipIntensity": {
+                  "type": "number"
+                },
+                "precipIntensityMax": {
+                  "type": "number"
+                },
+                "precipIntensityMaxTime": {
+                  "type": "integer"
+                },
+                "precipProbability": {
+                  "type": "number"
+                },
+                "precipType": {
+                  "type": "string"
+                },
+                "temperatureHigh": {
+                  "type": "number"
+                },
+                "temperatureHighTime": {
+                  "type": "integer"
+                },
+                "temperatureLow": {
+                  "type": "number"
+                },
+                "temperatureLowTime": {
+                  "type": "integer"
+                },
+                "apparentTemperatureHigh": {
+                  "type": "number"
+                },
+                "apparentTemperatureHighTime": {
+                  "type": "integer"
+                },
+                "apparentTemperatureLow": {
+                  "type": "number"
+                },
+                "apparentTemperatureLowTime": {
+                  "type": "integer"
+                },
+                "dewPoint": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "windGust": {
+                  "type": "number"
+                },
+                "windGustTime": {
+                  "type": "integer"
+                },
+                "windBearing": {
+                  "type": "integer"
+                },
+                "cloudCover": {
+                  "type": "number"
+                },
+                "uvIndex": {
+                  "type": "integer"
+                },
+                "uvIndexTime": {
+                  "type": "integer"
+                },
+                "visibility": {
+                  "type": "integer"
+                },
+                "ozone": {
+                  "type": "number"
+                },
+                "temperatureMin": {
+                  "type": "number"
+                },
+                "temperatureMinTime": {
+                  "type": "integer"
+                },
+                "temperatureMax": {
+                  "type": "number"
+                },
+                "temperatureMaxTime": {
+                  "type": "integer"
+                },
+                "apparentTemperatureMin": {
+                  "type": "number"
+                },
+                "apparentTemperatureMinTime": {
+                  "type": "integer"
+                },
+                "apparentTemperatureMax": {
+                  "type": "number"
+                },
+                "apparentTemperatureMaxTime": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "time",
+                "summary",
+                "icon",
+                "sunriseTime",
+                "sunsetTime",
+                "moonPhase",
+                "precipIntensity",
+                "precipIntensityMax",
+                "precipIntensityMaxTime",
+                "precipProbability",
+                "precipType",
+                "temperatureHigh",
+                "temperatureHighTime",
+                "temperatureLow",
+                "temperatureLowTime",
+                "apparentTemperatureHigh",
+                "apparentTemperatureHighTime",
+                "apparentTemperatureLow",
+                "apparentTemperatureLowTime",
+                "dewPoint",
+                "humidity",
+                "pressure",
+                "windSpeed",
+                "windGust",
+                "windGustTime",
+                "windBearing",
+                "cloudCover",
+                "uvIndex",
+                "uvIndexTime",
+                "visibility",
+                "ozone",
+                "temperatureMin",
+                "temperatureMinTime",
+                "temperatureMax",
+                "temperatureMaxTime",
+                "apparentTemperatureMin",
+                "apparentTemperatureMinTime",
+                "apparentTemperatureMax",
+                "apparentTemperatureMaxTime"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "summary",
+        "icon",
+        "data"
+      ]
+    },
+    "flags": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "meteoalarm-license": {
+          "type": "string"
+        },
+        "nearest-station": {
+          "type": "number"
+        },
+        "units": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sources",
+        "meteoalarm-license",
+        "nearest-station",
+        "units"
+      ]
+    },
+    "offset": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "latitude",
+    "longitude",
+    "timezone",
+    "currently",
+    "minutely",
+    "hourly",
+    "daily",
+    "flags",
+    "offset"
+  ]
+}

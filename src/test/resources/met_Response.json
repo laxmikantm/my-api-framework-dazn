@@ -1,0 +1,125 @@
+{
+  "latitude": 51.5014846,
+  "longitude": -0.22919,
+  "timezone": "Europe/London",
+  "currently": {
+    "time": 1623621244,
+    "summary": "Clear",
+    "icon": "clear-night",
+    "nearestStormDistance": 236,
+    "nearestStormBearing": 332,
+    "precipIntensity": 0,
+    "precipProbability": 0,
+    "temperature": 69.09,
+    "apparentTemperature": 69.09,
+    "dewPoint": 55.2,
+    "humidity": 0.61,
+    "pressure": 1023.3,
+    "windSpeed": 4.63,
+    "windGust": 8.5,
+    "windBearing": 218,
+    "cloudCover": 0.26,
+    "uvIndex": 0,
+    "visibility": 10,
+    "ozone": 323.1
+  },
+  "minutely": {
+    "summary": "Clear for the hour.",
+    "icon": "clear-night",
+    "data": [
+      {
+        "time": 1623621240,
+        "precipIntensity": 0,
+        "precipProbability": 0
+      }
+    ]
+  },
+  "hourly": {
+    "summary": "Partly cloudy throughout the day.",
+    "icon": "partly-cloudy-day",
+    "data": [
+      {
+        "time": 1623618000,
+        "summary": "Partly Cloudy",
+        "icon": "partly-cloudy-night",
+        "precipIntensity": 0,
+        "precipProbability": 0,
+        "temperature": 71.25,
+        "apparentTemperature": 71.25,
+        "dewPoint": 55.2,
+        "humidity": 0.57,
+        "pressure": 1023.3,
+        "windSpeed": 5.64,
+        "windGust": 9.85,
+        "windBearing": 215,
+        "cloudCover": 0.38,
+        "uvIndex": 0,
+        "visibility": 10,
+        "ozone": 321.6
+      }
+    ]
+  },
+  "daily": {
+    "summary": "Rain on Thursday through next Sunday.",
+    "icon": "rain",
+    "data": [
+      {
+        "time": 1623538800,
+        "summary": "Clear throughout the day.",
+        "icon": "clear-day",
+        "sunriseTime": 1623555900,
+        "sunsetTime": 1623615600,
+        "moonPhase": 0.11,
+        "precipIntensity": 0.0001,
+        "precipIntensityMax": 0.0003,
+        "precipIntensityMaxTime": 1623543660,
+        "precipProbability": 0.04,
+        "precipType": "rain",
+        "temperatureHigh": 83.92,
+        "temperatureHighTime": 1623599700,
+        "temperatureLow": 59.39,
+        "temperatureLowTime": 1623642960,
+        "apparentTemperatureHigh": 83.42,
+        "apparentTemperatureHighTime": 1623599700,
+        "apparentTemperatureLow": 59.88,
+        "apparentTemperatureLowTime": 1623642960,
+        "dewPoint": 56.39,
+        "humidity": 0.63,
+        "pressure": 1025.7,
+        "windSpeed": 4.15,
+        "windGust": 10.94,
+        "windGustTime": 1623614520,
+        "windBearing": 209,
+        "cloudCover": 0.23,
+        "uvIndex": 8,
+        "uvIndexTime": 1623585720,
+        "visibility": 10,
+        "ozone": 318.8,
+        "temperatureMin": 57.7,
+        "temperatureMinTime": 1623556500,
+        "temperatureMax": 83.92,
+        "temperatureMaxTime": 1623599700,
+        "apparentTemperatureMin": 58.24,
+        "apparentTemperatureMinTime": 1623556560,
+        "apparentTemperatureMax": 83.42,
+        "apparentTemperatureMaxTime": 1623599700
+      }
+    ]
+  },
+  "flags": {
+    "sources": [
+      "meteoalarm",
+      "cmc",
+      "gfs",
+      "icon",
+      "isd",
+      "madis",
+      "darksky",
+      "nearest-precip"
+    ],
+    "meteoalarm-license": "Based on data from EUMETNET - MeteoAlarm [https://www.meteoalarm.eu/]. Time delays between this website and the MeteoAlarm website are possible; for the most up to date information about alert levels as published by the participating National Meteorological Services please use the MeteoAlarm website.",
+    "nearest-station": 4.842,
+    "units": "us"
+  },
+  "offset": 1
+}
